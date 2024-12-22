@@ -19,8 +19,8 @@ final class AppServiceProvider extends ServiceProvider
     {
         $this->configureCommands();
         $this->configureModels();
-        $this->configureUrl();
         $this->configureVite();
+        $this->configureUrl();
     }
 
     /**
@@ -48,7 +48,8 @@ final class AppServiceProvider extends ServiceProvider
      */
     private function configureUrl(): void
     {
-        URL::forceScheme('https');
+        // TODO Uncomment this line after setting up HTTPS
+        // URL::forceScheme('https');
     }
 
     /**

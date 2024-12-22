@@ -1,0 +1,56 @@
+// ENTITIES
+
+// 1. User
+//  1.1. Name
+//  1.2. Email
+// 2. Championship
+//  2.1. Name
+//  2.2. Begin date
+//  2.3. End date
+// 3. Pod
+//  3.1. Name
+//  3.2. foreign key to championship
+// 4. Round
+//  4.1. Number
+//  4.2. Relation to championship
+//  4.3. Relation to pod
+//  4.5. Begin date
+//  4.4. End date
+// 5. Game
+//  5.1. Relation to round
+//  5.2. Relation to pod
+//  5.3. Relation to user 1
+//  5.4. Relation to user 2
+//  5.5. Score user 1
+//  5.6. Score user 2
+//  5.7. Date
+// 6. PodChampionship
+//  6.1. Relation to pod
+//  6.2. Relation to championship
+// 7. UserPod
+//  7.1. Relation to user
+//  7.2. Relation to pod
+
+// RELATIONSHIPS
+// 1. UserPod belongs to User
+// 2. UserPod belongs to Pod
+// 4. Pod belongs to Championship
+// 5. Championship has many Pod
+// 6. Pod has many Round
+// 7. Round belongs to Pod
+// 8. Round belongs to Championship
+// 9. Round has many Match
+// 10. Match belongs to Round
+// 11. Match belongs to Pod
+// 12. Match belongs to User 1
+// 13. Match belongs to User 2
+
+// TESTING
+// 1. Create a user
+// 2. Create a championship
+// 3. Create a pod
+// 4. Create a round
+// 5. Create a match
+// 6. Launch a notification to the users of the match when result is set
+// 7. Launch a notification to the users of the pod when the round is over
+// 8. Launch a notification to the users of the match if the result is not set after 24 hours
